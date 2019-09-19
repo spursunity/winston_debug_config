@@ -13,7 +13,13 @@ const logger = winston.createLogger({
   defaultMeta: { service: 'your-service-name' },
   transports: [
     new winston.transports.File({ filename: 'logger-error.log', level: 'error' }),
-    new winston.transports.File({ filename: 'logger-combined.log' })
+    new winston.transports.File({ filename: 'logger-combined.log' }),
+    new winston.transports.Console({
+      format: winston.format.combine(
+        winston.format.colorize(),
+        winston.format.simple()
+      )
+    })
   ],
 });
 

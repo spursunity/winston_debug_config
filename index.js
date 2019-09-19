@@ -2,9 +2,9 @@ const logger = require('./logger');
 
 function logFunc() {
   try {
-    const a = 99;
+    const a = 121;
     const b = 11;
-    // a();
+    a();
 
     const result = a / b;
 
