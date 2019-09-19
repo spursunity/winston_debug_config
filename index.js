@@ -1,12 +1,18 @@
+const Debug = require('debug');
+
 const logger = require('./logger');
+
+const debugLF = Debug('function:logFunc');
 
 function logFunc() {
   try {
-    const a = 99;
+    const a = 132;
     const b = 11;
-    // a();
+    debugLF({ a });
+    debugLF({ b });
 
     const result = a / b;
+    debugLF({ result });
 
     if (result > 10) {
       logger.log('info', { result });
