@@ -1,0 +1,7 @@
+{
+  "db": "mdb",
+  "client": "react",
+  "backend": "Hapi",
+  "port": 123,
+  "port2": 432
+}
