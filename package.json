@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "set NAME=jack & node index.js",
+    "test": "node ./index.js"
+  },
   "dependencies": {
     "config": "^3.2.2",
     "winston": "^3.2.1"

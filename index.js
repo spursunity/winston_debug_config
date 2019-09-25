@@ -8,7 +8,10 @@ function showConfig(prop) {
   }
 }
 
-showConfig('db');
+
+console.log('port: ', process.argv);
+
+showConfig('name');
 showConfig('port');
 showConfig('client');
 showConfig('backend');
